@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "client": {
+    "dataSource": "db",
+    "public": true
+  },
+  "airports": {
+    "dataSource": "db",
+    "public": true
+  },
+  "myFlight": {
+    "dataSource": "db",
+    "public": true
+  },
+  "airline": {
+    "dataSource": "db",
+    "public": true
+  },
+  "flight": {
+    "dataSource": "db",
+    "public": true
+  }
+}
